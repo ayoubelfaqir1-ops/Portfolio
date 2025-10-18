@@ -1,73 +1,148 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CampusConnect - École de Développement Informatique</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-        
-</head>
-<body>
-    <!-- ==================== NAVIGATION ==================== -->
-    <nav>
-        <div class="container">
-            <a href="" class="logo">Campus<span>Connect</span></a>
-            <div class="burger-menu" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul id="navMenu">
-                <li><a href="index.html" >accueil</a></li>
-                <li><a href="pages/formation.html" >formations</a></li>
-                <li><a href="pages/evenements.html"  >Événements</a></li>
-                <li><a href="pages/contact.html" >contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ayoub portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <!-- ==================== HERO SECTION ==================== -->
-    <section id="accueil">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Transformez votre <span class="highlight">passion</span> en carrière</h1>
-                    <p>Rejoignez CampusConnect et maîtrisez les technologies qui façonnent l'avenir. Des formations intensives conçues pour faire de vous un développeur d'exception.</p>
-                    <div class="hero-buttons">
-                        <a href="" class="btn-primary">Découvrir les formations</a>
-                        <a href="" class="btn-secondary">Nous contacter</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="images/photo-1522071820081-009f0129c71c.jpg" alt="team work">
-                </div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <nav>
+            
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+        </nav>
+        
+        <section class="herosection" id="accueil">
+            <div class="heroimage">
+                <img src="images/myimage.png" alt="image de ayoub">
+            </div>
+            <div class="description">
+                <h1>AYOUB <span id="nom">ELFAQIR</span></h1>
+                <h3>Développeur Full Stack | Designer UI/UX</h3>
+                <p>Étudiant passionné par le développement web et la création d'expériences utilisateur exceptionnelles</p>
+            </div>
+            <div class="buttons">
+                <button class="button" id="email"><img src="images/email1.png" alt="email">Email</button>
+                <button class="button" id="linkedin"><img src="images/linkedin.png" alt="linkedin">Linkedin</button>
+                <button class="button" id="github"><img src="images/github.png" alt="github">Github</button>
+                <button class="button" id="CV"><img src="images/CV.png" alt="CV">CV</button>
             </div>
         </section>
-    <!-- ==================== FORMATIONS ==================== -->
 
-    <!-- ==================== ÉVÉNEMENTS ==================== -->
-    
-    <!-- ==================== CONTACT ==================== -->
-   
-    <!-- ==================== FOOTER ==================== -->
+        <section class="apropos-section" id="apropos">
+            <div class="all">
+                <div class="aproposmoi">
+                <h1>A propos de moi</h1>
+                <div class="para">
+                    <img src="images/virgun.svg" alt="">
+                    <p>Je suis ayoub elfaqir, développeur web full stack en formation, passionné par la création de sites et applications modernes, est hétiques et fonctionnels. En parallèle de mes compétences techniques en développement front-end et back-end, j’approfondis également mes connaissances en UI/UX design pour offrir des expériences utilisateur optimales.</p>
+                    <img src="images/virgun.svg" alt="" id="icon2">
+                </div>
+                </div>
+                <div class="competences">
+                <h1>Competences</h1>
+                <div class="skills-box"  id="frontend-box">
+                    <h2>Front-end</h2>
+                    <div class="front-icons">
+                    <img src="icons/front-end/html.png" alt="html" id="html">
+                    <img src="icons/front-end/css.png" alt="css" id="css">
+                    <img src="icons/front-end/javascript.png" alt="javascript" id="js">
+                    </div>
+                </div>
+                    
+                <div class="skills-box" id="backend-box">
+                    <h2>back-end</h2>
+                    <div class="back-icons">
+                    <img src="icons/back-end/nodejs-logo-svgrepo-com.svg" alt="nodejs" id="nodejs">
+                    <img src="icons/back-end/Laravel.jpg" alt="Laravel" id="laravel">
+                    
+                    </div>
+                </div>
+
+                <div class="skills-box"  id="tools-box">
+                    <h2>Tools</h2>
+                    <div class="tools-icons">
+                    <img src="icons/tools/figma22.png" alt="figma" id="figma1">
+                    <img src="icons/tools/git.png" alt="git" id="git">
+                    <img src="icons/tools/github.png" alt="github" id="github2">
+                    </div>
+                </div>
+                
+                
+                
+                
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="projets-section">
+            <div class="projets-header">
+            <div class="line"></div>
+            <h1>Projets</h1>
+            </div>
+
+            <div class="campusconnect" id="projets">
+                <div class="second-box">
+                    <div class="img-container"><img src="images/Campusconnect.png" alt="site web CampusConnect"></div>
+                    <h2>Campus<span style="color: rgb(0, 135, 218);">Connect</span></h2>
+                    <p>CampusConnect est un site vitrine pour une école de développement informatique. Il a pour objectif de présenter les formations proposées, mettre en avant les événements, susciter l’intérêt des visiteurs et les inciter à rejoindre l’école.</p>
+                    <p>HTML ; CSS</p>
+                    <div class="buttons2">
+                        <button class="button2" ><a href="">Demo</a></button>
+                        <button class="button2" ><a href="https://github.com/ayoubelfaqir1-ops/Portfolio/blob/main/index.html">Code</a></button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="Contact">
+            <h1> Une idée ? Parlons-en !</h1>
+            <div class="contact-box">
+                <div class="info">
+                    <div class="elements">
+                    <h2>Information de contact</h2>
+                    <p id="sous">Votre message ne restera pas sans réponse : je vous recontacte sous 24 heures !  </p>
+                    <div id="telephone">
+                        <img src="images/telephone-handle-silhouette.png" alt="telephone">
+                        <p>+212605593734</p>
+                    </div>
+                    <div id="email22">
+                        <img src="images/email1.png" alt="email">
+                        <p>ayoub.elfaqir1@gmail.com</p>
+                    </div>
+                    <div id="location">
+                        <img src="images/maps-and-flags.png" alt="location">
+                        <p>Nador,Maroc</p>
+                    </div>
+                    </div>
+                </div>
+
+                <div id="form">
+                    <input type="text" placeholder="Nom et prénnom..." >
+                    <input type="text" placeholder="email...">
+                    <button class="envoyez">Envoyez</button>
+                </div>
+                
+
+            </div>
+        </section>
+        
+    </body>
     <footer>
-        <p>&copy; 2025 - École de Développement Informatique</p>
-        <p>Tous droits réservés | Mentions légales | Politique de confidentialité</p>
+        <p>&copy; Ayoub Elfaqir, Tous droits réservés.</p>
+        <p>Fait avec ❤️ et Youdev</p>
     </footer>
-    <!-- ==================== burger menu  ==================== -->
-    <script>
-        function toggleMenu() {
-            var navMenu = document.getElementById('navMenu');
-            var burger = document.querySelector('.burger-menu');
-            navMenu.classList.toggle('active');
-            burger.classList.toggle('active');
-        }
-        function closeMenu() {
-            var navMenu = document.getElementById('navMenu');
-            var burger = document.querySelector('.burger-menu');
-            navMenu.classList.remove('active');
-            burger.classList.remove('active');
-        }
-    </script>
-</body>
 </html>

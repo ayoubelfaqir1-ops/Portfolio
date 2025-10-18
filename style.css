@@ -11,6 +11,7 @@ body {
 :root {
     --lightgreen:var(--)
 }
+/*----------NAVBAR---------------*/
 nav {
     position: sticky;
     top: 0;
@@ -21,6 +22,14 @@ nav {
     align-items: center;
     z-index: 1;
    
+}
+.burger-menu {
+    display: none;
+
+}
+.burger-menu img {
+    width: 50px;
+    height: 50px;
 }
 nav ul {
     display: flex;
@@ -38,6 +47,8 @@ nav a {
 nav li {
     font-size: 14px;
 }
+
+/*----------------HEROSECTION-------------------*/
 .herosection {
     width: 100%;
     height: 600px;
@@ -141,14 +152,7 @@ nav li {
 }
 
 
-
-
-
-
-
-
-
-
+/*---------------APROPOS-------------*/
 
 .apropos-section {
     display: flex;
@@ -295,9 +299,6 @@ nav li {
 }
 
 
-
-
-
 #tools-box {
     display: flex;
     align-items: center;
@@ -335,33 +336,34 @@ nav li {
     padding: 0px;
 }
 
-
-
-
-
-
-
+/*----------Projtes---------*/
 .projets-section {
     display: flex;
     flex-direction: column;
-    
+    width: auto;
     align-items: center;
     background-color: #001404;
     height: 675px;
     overflow: hidden;
     display: column;
+
+
 }
 .projets-header {
     display: flex;
     position: relative;
+    
 }
 
 .line {
+
     background-color: #00FFBB;
-    width: 1600px;
+    width: 100vw;
     height: 10px;
     position: relative;
     margin-top: 25px;
+
+    
 }
 .projets-header h1 {
     font-size: 48px;
@@ -442,11 +444,7 @@ a {
 }
 
 
-
-
-
-
-
+/*------------CONTACT-----------*/
 .Contact {
     background-color: #00A976;
     display: flex;
@@ -472,6 +470,7 @@ a {
     width: 300px;
     height: 275px;
     background-color: rgb(0, 13, 7);
+    
 }
 .info h2 {
     margin-top: 25px;
@@ -527,7 +526,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 16px;
-    min-height: 40px; /* Same height for all */
+    min-height: 40px; 
     width: 270px;
 }
 #telephone p, #email22 p, #location p {
@@ -591,4 +590,188 @@ footer {
     border: solid white;
     border-radius: 50px;
     box-shadow:0 0 30px rgba(0, 255, 187, 0.25);
+}
+
+
+
+
+
+
+
+
+/*----------mobile---------*/
+@media (max-width: 768px) {
+    .description p {
+    width: auto;
+    font-weight: 300;
+    margin-left: 5vw;
+}
+.buttons {
+    gap: 15px;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: white;
+    background-color: #00FFBB;
+    font-weight: bold;
+    font-size: 12px;
+    border: solid white;
+    border-radius: 50px;
+    box-shadow:0 0 30px rgba(0, 255, 187, 0.25);
+}
+#email {
+    width: 85px;
+    height: 50px;
+}
+#email img {
+    width: 20px;
+}
+#linkedin {
+    width: 90px;
+    height: 50px;
+}
+#linkedin img {
+    width: 25px;
+}
+#github {
+    width: 85px;
+    height: 50px;
+}
+#github img {
+    width: 25px;
+}
+#CV {
+    width: 85px;
+    height: 50px;
+}
+#CV img {
+    width: 25px;
+}
+
+
+
+.all {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 30px;
+    
+}
+.apropos-section {
+    height: auto;
+}
+.all{
+    transform: scale(0.8);
+}
+.projets-section {
+    width: auto;
+    height: 600px;
+    
+}
+.projets-header h1 {
+    transform: scale(0.8);
+    left: 50%;
+    transform: translate(-50%);
+}
+.campusconnect {
+    transform: scale(0.8);
+    margin-top: 10px;
+
+}
+
+.Contact {
+    height: 1000px;
+    gap: 0px;
+}
+
+
+
+
+
+
+
+
+
+.Contact {
+    height: auto; 
+    gap: 20px; 
+    padding: 40px 20px;
+}
+
+.contact-box {
+    flex-direction: column;
+    gap: 0; 
+    width: 100%;
+    align-items: center;
+}
+
+
+.info {
+    width: 260px;
+    height: auto; 
+    padding: 0px 10px;
+    border-radius: 15px 15px 0 0;
+    margin: 0;
+    transform: none; 
+}
+
+.info h2 {
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.info p {
+    font-size: 10px;
+    width: 90%;
+}
+
+#telephone, #email22, #location {
+    width: 90%;
+    gap: 12px;
+}
+
+#telephone p, #email22 p, #location p {
+    font-size: 12px;
+}
+
+#form {
+    width: 280px; 
+    height: auto;
+    padding: 25px 0;
+    gap: 20px;
+    border-radius: 0 0 15px 15px;
+    margin: 0;
+}
+
+#form input {
+    width: 85%;
+    height: 45px;
+}
+
+#form button {
+    height: 32px;
+    width: 70px;
+}
+
+
+
+
+.burger-menu {
+    display: block;
+
+}
+
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .all {
+        transform: scale(0.7);
+        gap: 90px;
+    }
+    .apropos-section {
+        height: 600px;
+    }
 }
